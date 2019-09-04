@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <ng-container *ngFor="let item of arrCinema">
+        <app-item-cinema
+          [cinema]="item"
+          (eventId)="getGroupCinema($event)"
+        ></app-item-cinema>
+      </ng-container>
+    </div>
+    <div class="col-md-4">
+      <ng-container *ngFor="let item of arrGroupCinema">
+        <app-group-cinema [gcinema]="item"></app-group-cinema>
+      </ng-container>
+    </div>
+    <div class="col-md-6">
+      <ng-container *ngFor="let item of arrMovieSchedul">
+        <app-movie-schedule [schedule]="item"></app-movie-schedule>
+      </ng-container>
+    </div>
+  </div>
+</div>

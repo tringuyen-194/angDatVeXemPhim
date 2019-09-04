@@ -1,0 +1,62 @@
+header {
+  position: relative;
+  nav {
+    background-color: white;
+    height: 55px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    .logo {
+      padding: 5px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .my__navbar {
+      text-align: center;
+      ul {
+        margin: 18px 229px;
+        position: absolute;
+        right: -2%;
+        display: flex;
+        list-style: none;
+
+        li {
+          margin-right: 20px;
+          a {
+            text-decoration: none;
+            color: black;
+            transition: 0.5s;
+            &:hover {
+              color: #fb4226;
+            }
+          }
+        }
+      }
+    }
+    .login__location {
+      display: flex;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      a {
+        text-decoration: none;
+        color: #9b9b9b;
+        margin-top: 8px;
+        padding: 0 10px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .dropdown {
+        margin-top: 2px;
+        border-left: 1px solid #9b9b9b;
+
+        button {
+          color: #9b9b9b;
+        }
+      }
+    }
+  }
+}

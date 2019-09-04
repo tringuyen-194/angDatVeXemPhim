@@ -1,0 +1,45 @@
+<header class="bg-dark">
+  <nav>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="logo">
+          <a href=""><img [src]="logo" alt=""/></a>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="my__navbar">
+          <ul>
+            <li><a href="">Lịch chiếu</a></li>
+            <li><a href="">Cụm rạp</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Ứng dụng</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="login__location">
+          <a href="">
+            <img [src]="imgLogin" width="30px" height="30px" alt="" />
+            Đăng nhập
+          </a>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn  dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              <img [src]="imgLocation" alt="" />
+              Hồ Chí Minh
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<router-outlet></router-outlet>

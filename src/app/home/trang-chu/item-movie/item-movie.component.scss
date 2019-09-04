@@ -1,0 +1,79 @@
+.movie__item {
+  position: relative;
+  &:hover .movie__img {
+    opacity: 0.6;
+  }
+  &:hover p {
+    display: none;
+  }
+  &:hover button {
+    display: block;
+  }
+  &:hover a {
+    opacity: 1 !important;
+  }
+  .movie__img {
+    border-radius: 5%;
+    transition: 0.5s ease;
+    opacity: 1;
+    backface-visibility: hidden;
+    width: 100%;
+    display: block;
+  }
+  p {
+    margin: 10px 0;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5%;
+    background: linear-gradient(to right, rgb(164, 164, 233), whitesmoke);
+    transition: all 0.5s;
+  }
+
+  button {
+    padding: 10px 0;
+    border: none;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+    transition: all 0.5s;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f4511e;
+    &:hover span {
+      padding-right: 25px;
+    }
+    &:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    &:after {
+      content: "\00bb";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+  }
+  a {
+    display: block;
+    z-index: 20;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-27px, -56px);
+    img {
+      width: 100%;
+    }
+  }
+}

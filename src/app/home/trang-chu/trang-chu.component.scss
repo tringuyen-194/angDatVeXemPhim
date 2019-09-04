@@ -1,0 +1,22 @@
+.carousel-inner {
+  position: relative;
+
+  .carousel-item {
+    width: 100%;
+
+    &:hover .play__trailer {
+      display: block;
+    }
+    .slide {
+      cursor: pointer;
+    }
+    .play__trailer {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
